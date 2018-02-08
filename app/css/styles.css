@@ -5,32 +5,37 @@
 body {
   background-color: black;
   font-family: "Subway Ticker";
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
 
-.container {
-  max-width: 144px;
+html {
+  height: 100%;
+  min-height: 100%; }
+
+.container .ticker {
+  width: 144px;
   height: 100vh;
-  margin: 3em auto;
+  margin: 0 auto;
   position: relative;
-  overflow: hidden;
   top: 1em; }
-  .container .ticker {
-    position: absolute; }
-    .container .ticker ul {
-      display: grid;
-      margin: 0 auto;
-      padding: 0;
-      list-style-type: none;
-      position: relative; }
-      .container .ticker ul li {
-        color: blue;
-        font-size: 144px;
-        text-transform: uppercase;
-        writing-mode: vertical-rl;
-        text-orientation: upright;
-        animation: marquee 15s linear infinite; }
-        .container .ticker ul li b {
-          font-weight: normal; }
+  .container .ticker ul {
+    display: grid;
+    margin: 0 auto;
+    padding: 0;
+    list-style-type: none;
+    position: absolute;
+    width: 144px;
+    overflow: hidden; }
+    .container .ticker ul li {
+      color: blue;
+      font-size: 144px;
+      text-transform: uppercase;
+      writing-mode: tb-rl;
+      text-orientation: upright;
+      width: 144px;
+      margin-bottom: 3rem; }
+      .container .ticker ul li b {
+        font-weight: normal; }
 
 /* Make it move! */
 @keyframes marquee {

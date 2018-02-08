@@ -1,28 +1,34 @@
 .container {
-	max-width: 144px;
-	height: 100vh;
-	margin: 3em auto;
-	position: relative;
-	overflow: hidden;
-	top: 1em;
+	
 
 	.ticker {
-		position: absolute;
+		width: 144px;
+		height: 100vh;
+		margin: 0 auto;
+		position: relative;
+		top: 1em;
+
 		ul {
 			display: grid;
 			// max-width: 144px;
 			margin: 0 auto;
 			padding: 0;
 			list-style-type: none;
-			position: relative;
+			position: absolute;
+			// animation: marquee 6s linear infinite;
+			width: 144px;
+			overflow: hidden;
 
 			li {
 				color: blue;
 				font-size: 144px;
 				text-transform: uppercase;
-				writing-mode: vertical-rl;
+				writing-mode: tb-rl;
 				text-orientation: upright;
-				animation: marquee 15s linear infinite;
+				// word-break: break-word;
+				width: 144px;
+				margin-bottom: 3rem;
+				// text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px blue, 0 0 30px blue, 0 0 40px blue, 0 0 55px blue, 0 0 75px blue;
 
 				b { font-weight: normal; }
 			}
