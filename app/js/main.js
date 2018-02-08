@@ -1,33 +1,17 @@
 (function($) {
-	function pullStuff(keyword, target){
+	
+	var title = "Template%3AIn%20the%20news";
+	var news;
+	$.getJSON("https://en.wikipedia.org/w/api.php?action=query&prop=extracts&titles=" + title + "&format=json&callback=?", function(data) {                               
+	
+		var pageid = [];
+		for (var id in data.query.pages) {
+			pageid.push(id);
+		}
 
-		$.ajax({
-			type: "GET",
-			url: "https://en.wikipedia.org/w/api.php?action=parse&format=json&prop=text&section=0&page="+keyword+"&callback=?",
-			contentType: "application/json; charset=utf-8",
-			async: false,
-			dataType: "json",
-			success: function (data, textStatus, jqXHR) {
+		news = data.query.pages[pageid[0]].extract;
+		$('#ticker').append(news);
+	});
 
-				var markup = data.parse.text["*"];
-
-				function strip(html){
-					var tmp = document.createElement("DIV");
-					tmp.innerHTML = html;
-					return tmp.textContent || tmp.innerText || "";
-				}
-
-				var cleanmarkup = strip(markup).replace(/(\r\n|\n|\r)/gm," ").replace(/\s\s+/g, ' ');
-
-				var blurb = $(target).append(cleanmarkup);			
-
-			},
-			error: function (errorMessage) {
-
-			}
-		});
-
-
-	}
-	pullStuff("Portal%3ACurrent_events","#target"); 
+	
 })(jQuery);

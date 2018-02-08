@@ -1,0 +1,9 @@
+@font-face {
+	font-family: "Subway Ticker";
+	src: url('/fonts/Subway Ticker.ttf') format('truetype'), 
+				url('/fonts/Subway Ticker.eot') format('embedded-opentype'),
+				url('/fonts/Subway Ticker.woff') format('woff'),
+				url('/fonts/Subway Ticker.svg') format('svg');
+}
+
+$body: "Subway Ticker";

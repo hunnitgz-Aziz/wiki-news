@@ -1,0 +1,27 @@
+.ticker {
+		
+	ul {
+		display: grid;
+		max-width: 144px;
+		margin: 0 auto;
+		padding: 0;
+		list-style-type: none;
+		overflow: hidden;
+		position: relative;
+		height: 90em;
+		box-sizing: border-box;
+
+		li {
+			color: blue;
+			font-size: 144px;
+			text-transform: uppercase;
+			writing-mode: vertical-rl;
+			text-orientation: upright;
+			position: relative;
+			top: 6em;
+			animation: marquee 15s linear infinite;
+
+			b { font-weight: normal; }
+		}
+	}
+}

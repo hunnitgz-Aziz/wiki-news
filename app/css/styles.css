@@ -1,2 +1,37 @@
-.testing {
-  width: 71.42857%; }
+@font-face {
+  font-family: "Subway Ticker";
+  src: url("/fonts/Subway Ticker.ttf") format("truetype"), url("/fonts/Subway Ticker.eot") format("embedded-opentype"), url("/fonts/Subway Ticker.woff") format("woff"), url("/fonts/Subway Ticker.svg") format("svg"); }
+
+body {
+  background-color: black;
+  font-family: "Subway Ticker";
+  margin: 0; }
+
+.ticker ul {
+  display: grid;
+  max-width: 144px;
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+  overflow: hidden;
+  position: relative;
+  height: 90em;
+  box-sizing: border-box; }
+  .ticker ul li {
+    color: blue;
+    font-size: 144px;
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: relative;
+    top: 6em;
+    animation: marquee 15s linear infinite; }
+    .ticker ul li b {
+      font-weight: normal; }
+
+/* Make it move! */
+@keyframes marquee {
+  0% {
+    top: 8em; }
+  100% {
+    top: -11em; } }
