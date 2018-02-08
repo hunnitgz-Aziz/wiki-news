@@ -7,27 +7,30 @@ body {
   font-family: "Subway Ticker";
   margin: 0; }
 
-.ticker ul {
-  display: grid;
+.container {
   max-width: 144px;
-  margin: 0 auto;
-  padding: 0;
-  list-style-type: none;
-  overflow: hidden;
+  height: 100vh;
+  margin: 3em auto;
   position: relative;
-  height: 90em;
-  box-sizing: border-box; }
-  .ticker ul li {
-    color: blue;
-    font-size: 144px;
-    text-transform: uppercase;
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    position: relative;
-    top: 6em;
-    animation: marquee 15s linear infinite; }
-    .ticker ul li b {
-      font-weight: normal; }
+  overflow: hidden;
+  top: 1em; }
+  .container .ticker {
+    position: absolute; }
+    .container .ticker ul {
+      display: grid;
+      margin: 0 auto;
+      padding: 0;
+      list-style-type: none;
+      position: relative; }
+      .container .ticker ul li {
+        color: blue;
+        font-size: 144px;
+        text-transform: uppercase;
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        animation: marquee 15s linear infinite; }
+        .container .ticker ul li b {
+          font-weight: normal; }
 
 /* Make it move! */
 @keyframes marquee {

@@ -1,27 +1,31 @@
-.ticker {
-		
-	ul {
-		display: grid;
-		max-width: 144px;
-		margin: 0 auto;
-		padding: 0;
-		list-style-type: none;
-		overflow: hidden;
-		position: relative;
-		height: 90em;
-		box-sizing: border-box;
+.container {
+	max-width: 144px;
+	height: 100vh;
+	margin: 3em auto;
+	position: relative;
+	overflow: hidden;
+	top: 1em;
 
-		li {
-			color: blue;
-			font-size: 144px;
-			text-transform: uppercase;
-			writing-mode: vertical-rl;
-			text-orientation: upright;
+	.ticker {
+		position: absolute;
+		ul {
+			display: grid;
+			// max-width: 144px;
+			margin: 0 auto;
+			padding: 0;
+			list-style-type: none;
 			position: relative;
-			top: 6em;
-			animation: marquee 15s linear infinite;
 
-			b { font-weight: normal; }
+			li {
+				color: blue;
+				font-size: 144px;
+				text-transform: uppercase;
+				writing-mode: vertical-rl;
+				text-orientation: upright;
+				animation: marquee 15s linear infinite;
+
+				b { font-weight: normal; }
+			}
 		}
 	}
 }
