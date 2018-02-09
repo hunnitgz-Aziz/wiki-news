@@ -12,30 +12,33 @@ html {
   height: 100%;
   min-height: 100%; }
 
-.container .ticker {
-  width: 144px;
+.container {
   height: 100vh;
-  margin: 0 auto;
-  position: relative;
-  top: 1em; }
-  .container .ticker ul {
-    display: grid;
-    margin: 0 auto;
-    padding: 0;
-    list-style-type: none;
-    position: absolute;
+  overflow: hidden; }
+  .container .ticker {
     width: 144px;
-    overflow: hidden; }
-    .container .ticker ul li {
-      color: blue;
-      font-size: 144px;
-      text-transform: uppercase;
-      writing-mode: tb-rl;
-      text-orientation: upright;
+    margin: 0 auto;
+    position: relative; }
+    .container .ticker ul {
+      display: grid;
+      margin: 0 auto;
+      padding: 0;
+      list-style-type: none;
       width: 144px;
-      margin-bottom: 3rem; }
-      .container .ticker ul li b {
-        font-weight: normal; }
+      overflow: hidden; }
+      .container .ticker ul li {
+        color: #0061FF;
+        font-size: 144px;
+        text-transform: uppercase;
+        writing-mode: tb-rl;
+        writing-mode: vertical-rl;
+        -webkit-writing-mode: tb-rl;
+        text-orientation: upright;
+        width: 144px;
+        margin-bottom: 3rem;
+        text-shadow: 0 0 5px rgba(6, 113, 255, 0.15), 0 0 10px rgba(6, 113, 255, 0.15), 0 0 20px rgba(6, 113, 255, 0.25), 0 0 30px rgba(6, 113, 255, 0.15), 0 0 40px rgba(6, 113, 255, 0.35), 0 0 25px rgba(6, 113, 255, 0.35), 0 0 25px rgba(6, 113, 255, 0.35); }
+        .container .ticker ul li b {
+          font-weight: normal; }
 
 /* Make it move! */
 @keyframes marquee {

@@ -1,20 +1,17 @@
 (function(){
 
-// function scroller() {
+	$(window).on('load', function(){
+		
+		var i = 0;
+		
+		var interval = setInterval(function () {
+	    i += 20; // speed
+	    $('.container').animate({ scrollTop: i }, 100, 'linear');
+	    if (i >= $('.container').prop('scrollHeight') - $('.container').height()) {
+	      i = 0;
+	    }
+	  }, 90);
+			
+		})
 
-//   var scroll = $('.scroll');// Sets the div with a class of scroll as a variable
-  
-//   var height = scroll.height(); // Gets the height of the scroll div
-  
-//   var topAdj = -height-50;  
-							 
-	
-// 	scroll.animate({
-// 		'top' : [topAdj, 'linear'] 
-// 	}, 1000, function(){
-// 		scroll.css('top', 80); //resets the top position of the Ul for the next cycle
-// 		scroller(); // Recalls the animation cycle to begin.
-// 	});}
-	
-// scroller();
 })();

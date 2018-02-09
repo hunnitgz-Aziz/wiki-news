@@ -12,9 +12,9 @@
 		news = data.query.pages[pageid[0]].extract;
 		$('#ticker').append(news);
 		$('#ticker ul').addClass('scroll');
-	});
+	});	
 
-
-
-	
+	// $(window).on('load', function(){
+	// 	console.log($('#ticker').height());
+	// })
 })(jQuery);
