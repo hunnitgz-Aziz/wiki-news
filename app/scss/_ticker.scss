@@ -6,6 +6,7 @@
 		width: 144px;
 		margin: 0 auto;
 		position: relative;
+		margin-top: 3rem;
 
 		ul {
 			display: grid;
@@ -32,6 +33,8 @@
 				text-shadow: 0 0 5px rgba(6,113,255,0.15), 0 0 10px rgba(6,113,255,0.15), 0 0 20px rgba(6,113,255,0.25), 0 0 30px rgba(6,113,255,0.15), 0 0 40px rgba(6,113,255,0.35), 0 0 25px rgba(6,113,255,0.35), 0 0 25px rgba(6,113,255,0.35);
 
 				b { font-weight: normal; }
+
+				i { font-style: normal; }
 			}
 		}
 	}

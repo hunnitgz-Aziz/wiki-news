@@ -18,7 +18,8 @@ html {
   .container .ticker {
     width: 144px;
     margin: 0 auto;
-    position: relative; }
+    position: relative;
+    margin-top: 3rem; }
     .container .ticker ul {
       display: grid;
       margin: 0 auto;
@@ -39,6 +40,8 @@ html {
         text-shadow: 0 0 5px rgba(6, 113, 255, 0.15), 0 0 10px rgba(6, 113, 255, 0.15), 0 0 20px rgba(6, 113, 255, 0.25), 0 0 30px rgba(6, 113, 255, 0.15), 0 0 40px rgba(6, 113, 255, 0.35), 0 0 25px rgba(6, 113, 255, 0.35), 0 0 25px rgba(6, 113, 255, 0.35); }
         .container .ticker ul li b {
           font-weight: normal; }
+        .container .ticker ul li i {
+          font-style: normal; }
 
 /* Make it move! */
 @keyframes marquee {
