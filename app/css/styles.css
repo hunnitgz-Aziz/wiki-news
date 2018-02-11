@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Subway Ticker";
-  src: url("/fonts/SubwayTicker.ttf") format("truetype"), url("/fonts/SubwayTicker.eot") format("embedded-opentype"), url("/fonts/SubwayTicker.woff") format("woff"), url("/fonts/SubwayTicker.svg") format("svg"); }
+  src: url("fonts/SubwayTicker.ttf") format("truetype"), url("fonts/SubwayTicker.eot") format("embedded-opentype"), url("fonts/SubwayTicker.woff") format("woff"), url("fonts/SubwayTicker.svg") format("svg"); }
 
 body {
   background-color: black;
